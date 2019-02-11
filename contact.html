@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" type="image/png" href="media/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Kevin Langlois | Portfolio</title>
+</head>
+<body>
+    <div id="BurgerMenuWrapper">
+        <div class="BurgerMenu menu">
+            <input type="checkbox" class="checkBurger">
+            <div class="BurgerMenuLine line1"></div>
+            <div class="BurgerMenuLine line2"></div>
+            <div class="BurgerMenuLine line3"></div>
+        </div>
+    </div>
+
+
+    <div id="side-menu" class="MenuContainer ">
+        <div>
+        <nav class="navContainer">
+            <a class="navLink souligner" href="index.html">Accueil</a>
+            <a class="navLink souligner" href="projets.html">Projets</a>
+            <a class="navLink souligner" href="apropos.html">À propos</a>
+            <a class="navLink souligner" href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <div class="menuSocial">
+            <ul class="social">
+                <li class="socialItem"><a href="https://www.linkedin.com/in/k-langlois"><i class="fab fa-linkedin"></i></a></li>
+                <li class="socialItem"><a href="https://github.com/Kelang"><i class="fab fa-github"></i></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+    <h1 data-aos="fade-down">Contact</h1>
+    <main>
+        <form action="" method="POST" data-aos="fade-up">
+    
+                <div id='nomPrenom'>
+    
+                    <div id='nom'>
+                        <input type='text' id='sNomAuteur' name='sNomAuteur'>
+                        <label for='sNomAuteur' class='labelInfos'>Nom</label>
+                    </div>
+                    <div id='prenom'>
+                        <input type='text' id='sPrenomAuteur' name='sPrenomAuteur'>
+                        <label for='sPrenomAuteur' class='labelInfos'>Prénom</label>
+                    </div>
+                </div>
+                <input type='email' id='sCourrielAuteur' name='sCourrielAuteur'>
+                <label for='sCourrielAuteur' class='labelInfos'>Courriel</label>
+                <div class="textArea">
+                        <textarea name="" id="" cols="90" rows="10"></textarea>
+                </div>
+                
+                <input  type=button name=cmd id='btnSoumettre' class='.hvr-radial-out' value=Envoyer>
+        </form>
+    </main>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200,
+    });
+  </script>
+<script src="js/BurgerMenu.js"></script>
+</html>

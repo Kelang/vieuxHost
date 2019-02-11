@@ -1,0 +1,210 @@
+@import "menu";
+
+main{
+    overflow: hidden;
+}
+
+/****************Presentation********************/
+.gridPresentation{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    height: 100vh;
+}
+
+#presentation{
+    color: #ffffff;
+    font-size: 4em;
+    
+    h1{
+        animation: presentationAnim 1s  forwards;
+        animation-delay: .5s;
+        opacity: 0;
+    }
+}
+
+#portfolio{
+    color: #ffffff;
+    align-self: end;
+    text-align: center;
+    margin: 5em 5em 1em 5em;
+    font-size: 2em;
+    animation: arrowAnim 3s ease-in-out  forwards infinite;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes presentationAnim{
+    0%{
+        transform: translateY(10vh);
+    }
+    100%{
+        transform: translateY(5vh);
+        opacity: 1;
+    }
+}
+
+@keyframes arrowAnim{
+    0%{
+        transform: translateY(-5vh);
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+
+/***********************************************/
+
+
+
+
+
+/******************PROJETS*********************/
+
+#projets{
+    color: #ffffff;
+    h2{
+    font-size: 4em;
+    color: #ffffff;
+    
+    }   
+
+  
+
+    .projetLayout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px;
+        align-items: center;
+        margin-bottom: 5em;
+        grid-column-gap: 2em;
+    }
+
+
+    .projetItem{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5em;
+        width: 90%;
+        transition: .5s;
+        cursor: pointer;
+        grid-gap: 0em;
+        h3{
+            color: #ffffff;
+            font-size: 2em;
+            align-self: center;
+        }
+        
+        .projetImage{
+            background-color: green;
+        }
+    }
+    .projetItem:hover{
+        background-color: #ffffff;
+        color: #000000;
+
+        h3{
+            color: #000000;
+        }
+    }
+
+    .projetInfo{
+        display: grid;
+        width: 25%;
+        grid-template-columns: repeat(2, 1fr);
+        color: #000000;
+        grid-column-gap: 1em;
+        text-align: center;
+        margin-left: 8em;
+    .projetInfo:hover{
+        color: #ffffff;
+    }  
+
+        p{
+            font-size: 1.2em;
+            margin: .5em 0 .5em 0;
+        }
+
+        }
+    }
+
+
+    .projetImage img{
+       height: 300px;
+       transform: translateY(-15vh);
+        
+    }
+
+#media1{
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    
+}
+#media2{
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+}
+
+#media3{
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    
+}
+
+#media1.imageAnim{
+    animation: imageEnter 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#media2.imageAnim{
+    animation: imageEnter 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#media3.imageAnim{
+    animation: imageEnter 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imageEnter{
+    0%{
+        opacity: 0;
+        transform: translateX(2vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0vw);
+        
+    }
+
+}
+
+/********************SCROLL BAR*********************/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #181818;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #292929;
+  }
+
+    

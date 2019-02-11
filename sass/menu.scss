@@ -1,0 +1,249 @@
+body, html{
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+main{
+    margin-left: 10em;
+}
+
+.overflowDisable{
+    overflow: hidden;
+}
+
+/*******************BURGER MENU********************/
+#BurgerMenuWrapper{
+    display: block;
+    position: fixed;
+    padding: 20px;
+    top: 47%;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+
+.BurgerMenuLine{
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.menu.BurgerMenuAnim{
+    animation: tournerBoutonBurger 2s;
+}
+
+@keyframes tournerBoutonBurger {
+    0% {
+        transform: rotate(0deg);
+    }
+    50%,
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.menu.BurgerMenuAnim .line1{
+    transform: translateY(.5em) rotate(45deg);
+    background-color: #000000;
+}
+
+.menu.BurgerMenuAnim .line2{
+    opacity: 0;
+    background-color: #000000;
+}
+
+.menu.BurgerMenuAnim .line3{
+    transform: translateY(-.5em) rotate(-45deg);
+    top: 50%;
+    background-color: #000000;
+}
+
+.checkBurger{
+    display: none;
+}
+
+/**************************************************/
+
+/****************SIDE MENU************************/
+
+.MenuContainer{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 5;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: all cubic-bezier(0, 1.08, 0.58, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-column-gap:0em;
+}
+
+.MenuContainer .menuSocial{  
+    
+    align-self: end;
+
+    ul{
+    
+    display: flex;
+    flex-direction: row;
+    }
+    
+    i{
+        font-size: 4em;
+        margin: 1em 1em 1em 1em;
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+        opacity: 0;
+        transition: opacity
+    }
+    i:hover{
+        color: #161616;
+    }
+
+}
+
+.MenuContainer .menuSocial i.navContentAnim{
+    animation: menuLink 2s ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+
+
+.MenuContainer.MenuAnimEntrer{
+    animation: entrerMenu 1s ease-in-out 0s;
+    animation-fill-mode:forwards;
+}
+
+.MenuContainer.MenuAnimSortie{
+    animation: sortieMenu .5s ease-in-out 0s;
+    animation-fill-mode:forwards;
+}
+
+
+@keyframes entrerMenu{
+    0%{
+        transform: translateX(-100%);
+        
+    }
+    100%,
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes sortieMenu{
+    0%{
+        transform: translateY(0%);
+        
+    }
+    100%,
+    to{
+        transform: translateY(-100%);
+        
+    }
+}
+
+
+
+.navContainer{
+    
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    font-size: 4em;
+    margin-right: auto;
+    a{
+        text-decoration: none;
+        color: #161616;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        transition: .3s;
+        padding: 5px 0 5px 0;
+        margin: .5em auto .5em  0;
+    }
+}
+
+.navContainer a:before, .navContainer a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 5px;
+    content: '';
+    background: #000000;
+    transition: all 0.3s;
+    margin-top: 1em;
+}
+
+
+.navContainer a:after
+{
+    left: 0px;
+    bottom: 0px;
+}
+
+ .navContainer a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.navContainer a:nth-child(1){
+    animation-delay: .3s;
+}
+.navContainer a:nth-child(2){
+    animation-delay: .6s;
+}
+.navContainer a:nth-child(3){
+    animation-delay: .9s;
+}
+.navContainer a:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+
+
+
+.navLink.navContentAnim {
+    animation: menuLink 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menuLink{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/************************************************/

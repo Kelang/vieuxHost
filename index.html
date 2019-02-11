@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="media/favicon.ico"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Kevin Langlois | Portfolio</title>
+</head>
+<body>
+    <div id="BurgerMenuWrapper">
+        <div class="BurgerMenu menu">
+            <input type="checkbox" class="checkBurger">
+            <div class="BurgerMenuLine line1"></div>
+            <div class="BurgerMenuLine line2"></div>
+            <div class="BurgerMenuLine line3"></div>
+        </div>
+    </div>
+
+
+    <div id="side-menu" class="MenuContainer ">
+        <div>
+        <nav class="navContainer">
+            <a class="navLink souligner" href="index.html">Accueil</a>
+            <a class="navLink souligner" href="projets.html">Projets</a>
+            <a class="navLink souligner" href="apropos.html">À propos</a>
+            <a class="navLink souligner" href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <div class="menuSocial">
+            <ul class="social">
+                <li class="socialItem"><a href="https://www.linkedin.com/in/k-langlois"><i class="fab fa-linkedin"></i></a></li>
+                <li class="socialItem"><a href="https://github.com/Kelang"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="gridPresentation">
+
+                <div id="presentation">
+                    <h1>
+                        <span>Bonjour, je suis </span><br>
+                        <span>Kevin Langlois</span><br>
+                        <span>un développeur web</span><br>
+                        <span>full stack.</span>
+                    </h1>
+                    
+                </div>
+            
+                <div id="portfolio">
+                    <p><i class="fas fa-long-arrow-alt-down"></i></p>
+                    
+                </div>
+            
+            </div>
+
+
+
+        <section data-aos="fade-up" id="projets">
+            <h2>Mes récents projets</h2>
+            <div class="projetLayout">
+                <div class="projetsList">
+                    <div class="projetItem" id="projet1">
+                        <h3>Le Fol Espoir</h3>
+                        <div class="projetInfo">
+                            <p>Catégorie</p>
+                            <p>Année</p>
+                            <p>Site web</p>
+                            <p>2018</p>
+                        </div>
+                    </div>
+                    <div class="projetItem" id="projet2">
+                        <h3>Conquête Royale</h3>
+                        <div class="projetInfo">
+                                <p>Catégorie</p>
+                                <p>Année</p>
+                                <p>Animation</p>
+                                <p>2018</p>
+                            </div>
+                    </div>
+
+                    <div class="projetItem" id="projet3">
+                            <h3>Conquête Royale (Jeu)</h3>
+                            <div class="projetInfo">
+                                    <p>Catégorie</p>
+                                    <p>Année</p>
+                                    <p>Jeu</p>
+                                    <p>2018</p>
+                                </div>
+                        </div>
+                        
+                </div>
+                <div class="projetsGalery">
+
+                        <div class="projetImage">
+                            <div id="media1">
+                                    <img src="media/projets/folEspoir.png" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="projetImage">
+                            <div id="media2">
+                                    <img src="media/projets/filmImg.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="projetImage">
+                                <div id="media3">
+                                        <img src="media/projets/jeu.png" alt="">
+                                </div>
+                                
+                            </div>
+                    </div>
+
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer></footer>
+
+
+    
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200,
+    });
+  </script>
+<script src="js/BurgerMenu.js"></script>
+</html>

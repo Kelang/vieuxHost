@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/projets.css">
+    <link rel="shortcut icon" type="image/png" href="media/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Kevin Langlois | Portfolio</title>
+</head>
+<body>
+    <div id="BurgerMenuWrapper">
+        <div class="BurgerMenu menu">
+            <input type="checkbox" class="checkBurger">
+            <div class="BurgerMenuLine line1"></div>
+            <div class="BurgerMenuLine line2"></div>
+            <div class="BurgerMenuLine line3"></div>
+        </div>
+    </div>
+
+
+    <div id="side-menu" class="MenuContainer ">
+        <div>
+        <nav class="navContainer">
+            <a class="navLink souligner" href="index.html">Accueil</a>
+            <a class="navLink souligner" href="projets.html">Projets</a>
+            <a class="navLink souligner" href="apropos.html">À propos</a>
+            <a class="navLink souligner" href="contact.html">Contact</a>
+        </nav>
+        </div>
+        <div class="menuSocial">
+            <ul class="social">
+                <li class="socialItem"><a href="https://www.linkedin.com/in/k-langlois"><i class="fab fa-linkedin"></i></a></li>
+                <li class="socialItem"><a href="https://github.com/Kelang"><i class="fab fa-github"></i></a></li>
+
+            </ul>
+        </div>
+
+    </div>
+    <h1 data-aos="fade-down">Le Fol Espoir</h1>
+    <main>
+        <div data-aos="fade-up" class="technologies">
+                <span>HTML</span>
+                <span>css</span>
+                <span>JavaScript</span>
+                <span>Ajax</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>JSON</span>
+            </div>
+       <div class="topImg">
+           <img data-aos="fade-up" src="media/projets/folEspoir.png" alt="Le Fol Espoir Accueil">
+       </div>
+       <h2 data-aos="fade-up">Collaborateurs</h2>
+       <div data-aos="fade-up" class="collaborateurs">
+           
+           <span>
+               <a href="http://ulyssecorbeil.com/">Ulysse Corbeil</a>
+           </span>
+           <span>
+               <a href="http://pobourdeau.com/">Pierre-Olivier Bourdeau</a>
+           </span>
+           <span>
+               <a href="">Nguyen Hoai Nguyen</a>
+           </span>
+           <span>
+                <a href="http://lucas-theillet.com/">Lucas Theillet</a>
+           </span>
+           <span>
+               <a href="">Kevin Langlois</a>
+           </span>
+       </div>
+    
+
+
+       <div data-aos="fade-right" class="description">
+           <p>Dans le cadre du cours de développement web, mon équipe et moi-même avions comme mandat de développer une application web pour le département d'art et lettre du Collège de Maisonneuve. Le site devait permettre aux utilisateurs de consulter les oeuvres littéraires et visuels réalisés par les étudiants ainsi que de leur permettre de soumettre leur oeuvre afin qu'elle soit présenté sur le site. Les administreurs du site devaient être en mesure de gérer le contenu à l'aide d'une interface. Nous avions 15 semaines afin d'intégrer et d'implémenter notre application. Nous avons donc procéder avec la méthode agile Scrum en subdivisant le travail à réaliser en Sprints. J'ai travaillé en tant que développeur front-end au début du projet en participant à la réalisation du logo ainsi que des maquettes finales du site. Du côté back-end, j'ai réalisé le formulaire de soumission d'oeuvre.</p>
+       </div>
+        
+       <div class="galerie">
+           <img data-aos="fade-up" src="media/fol_espoir/oeuvres.png" alt="Gabarit des oeuvres">
+           <img data-aos="fade-up" src="media/fol_espoir/texte.png" alt="Gabarit d'un texte">
+           <img data-aos="fade-up" src="media/fol_espoir/aPropos.png" alt="A propos">
+           <img data-aos="fade-up" src="media/fol_espoir/formulaire.png" alt="Formulaire">
+           <img data-aos="fade-up" src="media/fol_espoir/recherche.png" alt="Recherche">
+       </div>
+
+       <div id="visit">
+           
+           <a href="http://www.folespoir.pobourdeau.com/application/site/">Visiter le site</a>
+       </div>
+
+    </main>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1200,
+    });
+  </script>
+<script src="js/BurgerMenu.js"></script>
+</html>
