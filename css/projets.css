@@ -105,6 +105,12 @@ main {
   grid-column-gap: 0em;
 }
 
+.laNavigation {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .MenuContainer .menuSocial {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -214,7 +220,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 25vh;
+  -ms-flex-item-align: center;
+      align-self: center;
   font-size: 4em;
   margin-right: auto;
 }
@@ -310,27 +317,6 @@ main {
 }
 
 /************************************************/
-/********************SCROLL BAR*********************/
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #000000;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #181818;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #292929;
-}
-
 main {
   margin-right: 10em;
   overflow: hidden;

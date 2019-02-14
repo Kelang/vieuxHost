@@ -87,6 +87,10 @@ main{
     grid-column-gap:0em;
 }
 
+.MenuContainer .laNavigation{
+    align-self: center;
+}
+
 .MenuContainer .menuSocial{  
     
     align-self: end;
@@ -161,7 +165,8 @@ main{
     padding-left: 2em;
     display: flex;
     flex-direction: column;
-    padding-top: 25vh;
+    //padding-top: 25vh;
+    align-self: center;
     font-size: 4em;
     margin-right: auto;
     a{
@@ -201,15 +206,6 @@ main{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
 .navContainer a:nth-child(1){
     animation-delay: .3s;
 }
@@ -222,9 +218,6 @@ main{
 .navContainer a:nth-child(4){
     animation-delay: 1.2s;
 }
-
-
-
 
 .navLink.navContentAnim {
     animation: menuLink 1s ease-in-out;
